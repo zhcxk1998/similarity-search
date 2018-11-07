@@ -1,0 +1,59 @@
+.root {
+    -fx-background-image: url(../img/bg.jpg);
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+.label{
+    -fx-font-weight: bold;
+}
+.button {
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-opacity: 0.8;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #00ffd8, #0e72ff);
+    -fx-border-width: 3px;
+    -fx-font-size: 20px;
+    color: red;
+}
+
+.button:hover {
+    -fx-opacity: 1;
+    -fx-background-color: rgba(138, 233, 255, 0.05);
+    -fx-border-color: linear-gradient(to top right,#0e72ff, #00ffd8);
+}
+.list-view{
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-opacity: 0.8;
+    -fx-background-color: rgba(246, 246, 246, 0.8);
+    -fx-border-color: linear-gradient(to bottom right, #00ffd8, #0e72ff);
+    -fx-border-width: 0.8px;
+    -fx-font-weight: bold;
+}
+.chart{
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+.chart-legend{
+    -fx-background-color: white;
+}
+
+.combo-box {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-opacity: 0.8;
+    -fx-border-color: linear-gradient(to bottom right,#00ffd8, #0e72ff);
+    -fx-background-color: transparent;
+    -fx-border-width: 1.5px;
+}
+.combo-box:hover{
+    -fx-opacity: 1;
+    -fx-border-color: linear-gradient(to top right,#0e72ff, #00ffd8);
+}
+.combo-box:focused{
+    -fx-opacity: 1;
+    -fx-border-color: linear-gradient(to top right,#0e72ff, #00ffd8);
+}

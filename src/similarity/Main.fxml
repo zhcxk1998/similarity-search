@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="similarity.MainController">
+    <children>
+        <Pane layoutX="-14.0" prefHeight="600.0" prefWidth="1210.0">
+            <children>
+                <Button layoutX="1037.0" layoutY="39.0" mnemonicParsing="false" onAction="#Algorithmic_start" prefHeight="69.0" prefWidth="139.0" text="开始查询">
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#068bff" />
+                                <Stop color="#00ffdd" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+                <ComboBox fx:id="Algorithmic_options" layoutX="606.0" layoutY="65.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="352.0" promptText="选择算法" />
+                <Label alignment="CENTER" layoutX="63.0" layoutY="12.0" prefHeight="54.0" prefWidth="475.0" text="~wuli靓爆镜の化学研究小组~">
+                    <font>
+                        <Font name="syht Italic" size="33.0" />
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="#e80c80" />
+                                <Stop color="#2b08ff" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <ListView fx:id="results" layoutX="63.0" layoutY="136.0" prefHeight="90.0" prefWidth="1113.0" />
+                <AnchorPane layoutX="19.0" layoutY="211.0" prefHeight="380.0" prefWidth="1173.0">
+                    <children>
+                        <BarChart fx:id="statistics" alternativeColumnFillVisible="true" barGap="10.0" categoryGap="20.0" layoutX="-1.0" opacity="0.9" prefHeight="389.0" prefWidth="1173.0" style="-: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <xAxis>
+                                <CategoryAxis fx:id="statistics_CateGoryAxis" animated="false" prefHeight="50.0" prefWidth="1081.0">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </CategoryAxis>
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="statistics_NumberAxis" lowerBound="45.0" prefHeight="300.0" prefWidth="27.0" side="LEFT" />
+                            </yAxis>
+                        </BarChart>
+                  <Label fx:id="max" alignment="CENTER" layoutX="36.0" layoutY="319.0" prefHeight="54.0" prefWidth="298.0">
+                     <font>
+                        <Font name="syht Italic" size="20.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#e50e1d" />
+                              <Stop color="#7309e3" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="44.0" fitWidth="70.0" layoutX="494.0" layoutY="66.0" onMouseClicked="#setpath" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/logo2.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="path_L" alignment="CENTER" layoutX="63.0" layoutY="68.0" prefHeight="41.0" prefWidth="422.0" textAlignment="JUSTIFY" textFill="#333333">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="605.0" layoutY="33.0" text="选择算法：">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#068bff" />
+                                <Stop color="#00ffdd" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
